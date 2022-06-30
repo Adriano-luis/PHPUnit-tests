@@ -10,8 +10,16 @@ class DiscountCalculatorTest {
 
         $expectedValue = 110;
         $this->assertEquals($expectedValue, $totalWithDiscount);
+    }
 
+    public function ShouldNotApplay_WhenValueIsBellowTheMinimumTest(){
+        $discountCalculator = new DiscountCalculator();
 
+        $totalValue = 90;
+        $totalWithDiscount = $discountCalculator->apply($totalValue);
+
+        $expectedValue = 90;
+        $this->assertEquals($expectedValue, $totalWithDiscount);
     }
 
     public function assertEquals($expectedValue, $actualValue){
