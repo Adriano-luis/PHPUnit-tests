@@ -2,7 +2,7 @@
 
 class DiscountCalculatorTest {
 
-    public function ShouldApplay_WhenValueIsAboveTheMinimum(){
+    public function ShouldApplay_WhenValueIsAboveTheMinimumTest(){
         $discountCalculator = new DiscountCalculator();
 
         $totalValue = 130;
